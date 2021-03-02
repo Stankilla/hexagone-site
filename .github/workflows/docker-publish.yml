@@ -84,5 +84,12 @@ jobs:
     steps:
       - name: deploy
         run:
-          docker run -d yannnnnnnnnnnn/test:latest
+          docker run -e VIRTUAL_HOST=github.com/Stankilla/hexagone -d yannnnnnnnnnnn/test:latest
+          
+          
+          
+          
+          
+          
+          
     
