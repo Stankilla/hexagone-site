@@ -85,7 +85,7 @@ jobs:
       - name: deploy
         run:
           docker rm github || true
-          docker run -e VIRTUAL_HOST=github.171.33.75.187.nip.io --name github -d yannnnnnnnnnnn/test:latest
+          docker run --pull always -e VIRTUAL_HOST=github.171.33.75.187.nip.io --name github -d yannnnnnnnnnnn/test:latest
           
           
           
