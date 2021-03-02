@@ -77,3 +77,11 @@ jobs:
           push: true
           tags: |
             yannnnnnnnnnnn/test:${{ steps.prep.outputs.version }}
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - name: deploy
+        run:
+          docker run -d yannnnnnnnnnnn/test
+    
